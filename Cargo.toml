@@ -1,0 +1,15 @@
+[package]
+name = "rust-analyzer-tests-example"
+version = "0.1.0"
+authors = ["olvyko <test@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+module1 = { path = "modules/module1" }
+module2 = { path = "modules/module2" }
+
+[workspace]
+members = [
+    "modules/module1",
+    "modules/module2",
+]
